@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return '<h1>Hi from home route</h1>'
+    return render_template('home.html')
 
 @app.route('/about')
 def aboutmyself():
@@ -14,7 +14,6 @@ def aboutmyself():
     hobby = request.args.get('hobby')
 
     return render_template('about.html', name=name, email=email, hobby=hobby)
-
 
 if __name__ == '__main__':
     app.run(debug=True)
