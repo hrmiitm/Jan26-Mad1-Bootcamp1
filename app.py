@@ -11,8 +11,9 @@ def home():
 def aboutmyself():
     name = request.args.get('name') # value, None
     email = request.args.get('email')
+    hobby = request.args.get('hobby')
 
-    return render_template('about.html', name=name, email=email)
+    return render_template('about.html', name=name, email=email, hobby=hobby)
 
 
 if __name__ == '__main__':
