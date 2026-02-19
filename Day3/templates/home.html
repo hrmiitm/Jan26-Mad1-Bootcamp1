@@ -1,0 +1,25 @@
+{% extends './layouts/bootstrap.html' %}
+
+{% block title %} Home {% endblock %}
+
+{% block body %}
+    
+    <h1>Home Page</h1>
+
+    {% if user %}
+        Username: {{user["username"]}} <br>
+        Email: {{user["email"]}} <br>
+    {% else %}
+        Hey you are not Logged In
+    {% endif %}
+
+    <ul>
+        <li>Access Page link: <a href="/access">Click Here</a></li>
+    </ul>
+
+{% endblock %}
+
+
+
+
+

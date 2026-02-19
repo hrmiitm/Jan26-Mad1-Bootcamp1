@@ -1,0 +1,26 @@
+{% extends './layouts/bootstrap.html' %}
+
+{% block title %} Access {% endblock %}
+
+
+{% block body %}
+
+
+    <div class="container">
+        <div class="row">
+
+            <div class="col">
+                <h1>Login Form</h1>
+                {% include './components/login_form.html'   %}
+            </div>
+
+            <div class="col">
+                <h1>Register Form</h1>
+                {% include './components/register_form.html'   %}
+            </div>
+              
+        </div>
+    </div>
+
+
+{% endblock %}
