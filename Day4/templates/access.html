@@ -1,0 +1,18 @@
+{% extends './layouts/bootstrap.html' %}
+
+{% block title %}
+    Access Page
+{% endblock %}
+
+
+{% block body %}
+    {% include './components/navbar.html'   %}
+
+    <h1>Login Page</h1>
+    {% include './components/login_form.html'   %}
+    <br>
+
+    <h1>Register Page</h1>
+    {% include './components/register_form.html'   %}
+
+{% endblock %}

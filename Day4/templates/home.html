@@ -1,0 +1,19 @@
+{% extends './layouts/bootstrap.html' %}
+
+{% block title %}
+    Access Page
+{% endblock %}
+
+
+{% block body %}
+    {% include './components/navbar.html'   %}
+    <h1>Home Page</h1>
+    UserObject : {{user}} <br>
+
+    {% if user %}
+        Username : {{user.username}} <br>
+        Email : {{user.email}} <br>
+    {% endif %}
+    
+
+{% endblock %}
