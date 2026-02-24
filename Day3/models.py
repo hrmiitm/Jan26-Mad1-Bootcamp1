@@ -16,3 +16,4 @@ class User(db.Model):
 
     # Is User Blacklisted
     isBlacklisted = db.Column(db.Boolean, default=False)
+

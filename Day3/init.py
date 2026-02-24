@@ -8,7 +8,6 @@ db.session.commit()
 
 print('1 Admin Created')
 
-
 users = [
     ('user1', 'user1@email.com', 'u1'),
     ('user2', 'user2@email.com', 'u2'),
